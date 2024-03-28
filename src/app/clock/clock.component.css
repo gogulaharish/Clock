@@ -1,0 +1,321 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clock-dial{
+    width: 500px;
+    height: 500px;
+    border: 10px solid rgb(195, 218, 130);
+    background-color: rgb(146, 128, 250);
+    border-radius: 50%;
+    top: 30px;
+    left:150px;
+    float: left;
+    position: relative;
+    box-shadow: 5px 5px 10px 5px rgb(229, 24, 24);
+}
+
+.point{
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+    border-radius: 50%;
+    position: absolute;
+    top: 240px;
+    left: 240px;
+}
+
+.hour{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    text-shadow: 5px 5px 10px rgb(15, 1, 1) ;
+}
+
+.hour-1{
+    top: 40px;
+    right: 130px;
+}
+
+.hour-2{
+    top: 125px;
+    right: 45px;
+}
+
+.hour-3{
+    top: 225px;
+    right: 10px;
+}
+
+.hour-4{
+    top: 330px;
+    right: 45px;
+}
+
+.hour-5{
+    top: 415px;
+    right: 125px;
+}
+
+.hour-6{
+    bottom: 10px;
+    right: 235px;
+}
+
+.hour-7{
+    top: 415px;
+    left: 125px;
+}
+
+.hour-8{
+    top: 330px;
+    left: 45px;
+}
+
+.hour-9{
+    top: 225px;
+    left: 10px;
+}
+
+.hour-10{
+    top: 125px;
+    left: 45px;
+}
+
+.hour-11{
+    top: 40px;
+    left: 130px;
+}
+
+.hour-12{
+    top: 10px;
+    right: 235px;
+}
+
+.brand{
+    top: 20%;
+    right: 42%;
+    font-size: 25px;
+}
+
+
+.second-hand-wrapper{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50px;
+    left: 50px;
+}
+
+.second-hand{
+    position: relative;  
+}
+
+.second-hand .hand{
+    width: 2px;
+    height: 200px;
+    background-color: rgb(215, 24, 24);
+    position: absolute;
+    left: 198px;
+    border-radius: 0.5px;
+}
+
+.minute-hand-wrapper{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50px;
+    left: 50px;
+}
+
+.minute-hand{
+    position: relative;
+}
+
+.minute-hand .hand{
+    width: 3px;
+    height: 200px;
+    background-color: rgba(242, 251, 63, 0.934);
+    position: absolute;
+    left: 198.5px;
+    border-radius: 1px;
+}
+
+.hour-hand-wrapper{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    top: 100px;
+    left: 100px;
+}
+
+.hour-hand{
+    position: relative;
+}
+
+.hour-hand .hand{
+    width: 4px;
+    height: 150px;
+    background-color: rgb(7, 104, 10);
+    position: absolute;
+    left: 148px;
+    border-radius: 1.5px;
+}
+
+.main-container{
+    background-color: rgb(106, 81, 248);
+    float:right;
+    right: 80px;
+    width: 450px;
+    height:150px;
+    margin-right: 300px;
+    margin-top: 130px; 
+    border-radius: 15px;
+    box-shadow:  2px 2px 5px 2px rgb(229, 24, 24);
+}
+
+.child-container{
+    width:75px;
+    height:70px;
+    border-style: solid;
+    border-color: rgb(106, 81, 248);
+    float: right;
+    margin-right: 10px; 
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 3px;
+    border-width: 5px;
+} 
+
+.colon{
+    float:right;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-right: 0px;
+    font-weight: bold;
+    color: white;
+}
+
+.text{
+    font-family: Arial, Helvetica, sans-serif ;
+    color: rgb(254, 253, 253);
+    font-weight: bold;
+    font-size: 50px;
+    margin-top:10px;
+    letter-spacing: 2px;
+}
+
+.stop-container{
+    background-color: rgb(106, 81, 248);
+    float:right;
+    right: 80px;
+    width: 450px;
+    height:150px;
+    margin-right: 300px;
+    margin-top: 50px; 
+    border-radius: 10px;
+    box-shadow:  2px 2px 5px 2px rgb(229, 24, 24);
+
+}
+
+.child-stop1{
+    height:60px;
+    width: 350px;
+    /* background-color: rgb(144, 204, 244); */
+    margin-top: 10px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+
+.child-stop1 span{
+    margin-left: 5px;
+    font-weight: bold;
+    color: white;
+    font-size: 50px;
+    font-family: sans-serif;
+    top: 50px;
+}
+
+.child-stop2{
+    height:60px;
+    width: 350px;
+
+    margin-top: 10px;
+    margin-left: 40px;
+    
+}
+
+.btn{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    background-color: white;
+    float: left;
+    margin-left: 70px;
+    margin-top: 5px;
+    position: relative;
+    border-style: solid;
+    border-color: rgb(30, 5, 74);
+}
+
+.btn1{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    background-color: white;
+    float: left;
+    margin-left: 70px;
+    margin-top: 5px;
+    position: relative;
+    border-style: solid;
+    border-color: rgb(30, 5, 74);
+}
+
+.btn .fa-pause{ 
+    position: absolute;
+    top:10px;
+    left:15px;
+}
+
+.btn .fa-play{
+    position: absolute;
+    top:10px;
+    left:15px;
+}
+
+.btn:hover{
+    color: white;
+    border-color: rgb(229, 83, 30);
+    background-color: black;
+}
+
+.btn1:hover{
+    color: white;
+    border-color: rgb(229, 83, 30);
+    background-color: black;
+}
+
+.btn1[disabled]{
+    cursor: not-allowed;
+    /* color: black; */
+    background-color: white;
+    border-color: rgb(30, 5, 74);
+    pointer-events: none;
+}
+
+
+.btn1 .fa-rotate-right{
+    position: absolute;
+    top:10px;
+    left:10px;
+  
+}
+
+
+
+

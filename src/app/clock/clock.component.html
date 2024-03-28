@@ -1,0 +1,67 @@
+<div class="clock-dial">
+    <div class="point"></div>
+    <div class="hour hour-1">1</div>
+    <div class="hour hour-2">2</div>
+    <div class="hour hour-3">3</div>
+    <div class="hour hour-4">4</div>
+    <div class="hour hour-5">5</div>
+    <div class="hour hour-6">6</div>
+    <div class="hour hour-7">7</div>
+    <div class="hour hour-8">8</div>
+    <div class="hour hour-9">9</div>
+    <div class="hour hour-10">10</div>
+    <div class="hour hour-11">11</div>
+    <div class="hour hour-12">12</div>
+    <div class="hour brand">TITAN</div>
+
+    <div class="minute-hand-wrapper" [ngStyle]="{transform: 'rotate(' + minute + 'deg)'}">
+        <div class="minute-hand">
+            <div class="hand"></div>
+            <!-- <div class="arrow">V</div> -->
+        </div>
+    </div>
+    <div class="hour-hand-wrapper" [ngStyle]="{transform: 'rotate(' + hour + 'deg)'}">
+        <div class="hour-hand" >
+            <div class="hand"></div>
+            <!-- <div class="arrow">V</div> -->
+        </div>
+    </div>
+    <div class="second-hand-wrapper" [ngStyle]="{transform: 'rotate(' + second + 'deg)'}">
+        <div class="second-hand">
+            <div class="hand"></div>
+            <!-- <div class="arrow">V</div> -->
+        </div>
+    </div>
+</div>
+
+<div class="main-container">
+    <div class="child-container"><p class="text">{{tStatus}}</p></div>
+    <p class="colon">:</p>
+    <div class="child-container"><p class="text">{{dSec}}</p></div>
+    <p class="colon">:</p>
+    <div class="child-container"><p class="text">{{dMin}}</p></div> 
+    <p class="colon">:</p> 
+    <div class="child-container"><p class="text">{{dHr}}</p></div>  
+</div>
+
+<div class="stop-container">
+    <div class="child-stop1">
+        <span>{{hr}}  :</span>
+        <span>{{min}}  :</span>
+        <span>{{sec}}  :</span>
+        <span>{{ms}}</span>
+    </div>
+    <div class="child-stop2">
+        <div class="icon-container">
+            <button class="btn"*ngIf="!isPlay" (click)="playClock()"><i class="fa-solid fa-play fa-2x" ></i></button>
+            <button class="btn" *ngIf="isPlay" (click)="pauseClock()"><i class="fa-solid fa-pause fa-2x"></i></button>           
+        </div>
+        <!-- <div class="icon-container">
+            <a><i class="fa-solid fa-pause fa-2x" *ngIf="isPlay" (click)="pauseClock()"></i></a>
+            <a><i class="fa-solid fa-play fa-2x" *ngIf="!isPlay" (click)="playClock()"></i></a>
+        </div>-->
+        <div class="icon-container">
+            <button class="btn1" [disabled]="isPlay"><i class="fa-solid fa-rotate-right fa-2x" id="reset" (click)="reset()"></i></button>
+        </div> 
+    </div>
+</div>
